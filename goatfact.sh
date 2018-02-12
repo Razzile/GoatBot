@@ -1,11 +1,16 @@
 #!/bin/bash
 webhook="YOUR_WEBHOOK_URL"
 
-lines="./goatfacts.txt"
+script=$(readlink -f "$0")
+scriptpath=$(dirname "$script")
+
+echo $scriptpath
+
+lines="$scriptpath/goatfacts.txt"
 line="$(shuf -n 1 $lines)"
 line=${line//[$'\t\r\n']}
 
-images="./goatimages.txt"
+images="$scriptpath/goatimages.txt"
 image="$(shuf -n 1 $images)"
 image=${image//[$'\t\r\n']}
 
