@@ -1,5 +1,5 @@
 #!/bin/bash
-webhook="https://discordapp.com/api/webhooks/412386643647922176/qMA-aUXGD4Vg65gOmAHoXm0OLLYQ6vOBOu38Ip-Uy9Z4Yqkiv4QH5Xu8nUSWLkWbmESQ"
+webhook="WEBHOOK_URL"
 
 script=$(readlink -f "$0")
 scriptpath=$(dirname "$script")
